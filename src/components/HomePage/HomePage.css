@@ -1,0 +1,198 @@
+
+body
+{
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+#dark
+{
+    background: linear-gradient(black, rgb(66, 2, 66));
+    background-attachment: fixed;
+}
+#light
+{
+    background: linear-gradient(rgb(252, 216, 149), rgb(255, 255, 154));
+    background-attachment: fixed;
+}
+
+/* Navigation bar */
+#dark .nav-bar
+{
+    display: inline;
+    color: white;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.left
+{
+    float: left;
+    padding-left: 10vw;
+}
+
+.right
+{
+    float: right;
+}
+
+.logo_image
+{
+    width: 40px;
+    height: 40px;
+}
+
+.left p
+{
+    font-weight: 700;
+    font-size: larger;
+
+}
+
+ul
+{
+    list-style-type: none;
+}
+
+li
+{
+    display: inline;
+    padding: 14px 16px;
+}
+
+li:hover
+{
+    cursor: pointer;
+}
+
+.home
+{
+    width: 100%;
+    justify-content: center;
+}
+
+
+#dark .title
+{
+    color: white;
+}
+
+#light .title
+{
+    color: black;
+}
+
+.title
+{
+    margin: 0;
+    font-size: 7vh;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 15%;
+    padding-bottom: 0;
+    font-weight: 500;
+    text-align: center;
+}
+
+.title span
+{
+    color: blue;
+    text-decoration: underline;
+}
+
+#dark .desc
+{
+    color: white;
+}
+
+#light .desc
+{
+    color: darkslategrey;
+}
+
+.desc
+{
+    padding-left: 30%;
+    padding-right: 30%;
+    color: aliceblue;
+    opacity: 0.8;
+    text-align: center;
+}
+
+.button1
+{
+    margin-left: 40vw;
+}
+
+.button2
+{
+    margin-left: 20px;
+}
+
+
+.button1, .button2
+{
+    margin-top: 10px;
+    background:linear-gradient(#0dadf7, #0b75a7) ;
+    padding: 15px;
+    border-radius: 20px;
+    border-color: none;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;  
+}
+
+.button1:hover, .button2:hover
+{
+    transform: translateY(-2px);
+}
+
+#dark .attention
+{
+    color: yellow;
+}
+
+#light .attention
+{
+    color: purple;
+}
+
+.attention
+{
+    text-align: center;
+    font-weight: 600;
+}
+
+@media only screen and (max-width: 900px) 
+{
+
+    .title
+    {
+        margin: 0;
+        font-size: 4vh;
+        padding-left: 10%;
+        padding-right: 10%;
+        padding-top: 15%;
+        padding-bottom: 0;
+        font-weight: 500;
+        text-align: center;
+    }
+    .desc
+    {
+        padding: 20px;
+    }
+
+    .button1, .button2
+    {
+        margin: 5px;
+        margin-left: 40%;
+    }
+
+    .attention
+    {
+        font-size: small;
+        padding: 5px;
+    }    
+} 
